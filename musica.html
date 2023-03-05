@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body{
+            background: #3E5151;  /* fallback for old browsers */
+             background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);  /* Chrome 10-25, Safari 5.1-6 */
+             background: linear-gradient(to right, #DECBA4, #3E5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            }
+        
+        a {
+        color: black;
+        padding: 0 4px;
+        text-decoration: none;
+        }
+
+        a:hover {
+         background-color: white;
+         color: #D7C8B6;
+        }   
+
+        header, footer {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        }
+
+        main {
+        padding: 20px;
+        }
+
+        button {
+        padding: 10px;
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-right: 10px;
+        }
+
+        button:hover {
+        background-color: #3e8e41;
+        }
+</style>
+
+
+    </style>
+
+    <title>RECORDS<3</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+    
+    <header> 
+        <header>
+           <FONT COLOR="cian"><center><h1>Bem-vinda a nossos vídeos especiais meu neném</h1></center>
+            <ul>
+    </header>
+    <main>
+        <input type="file" id="audioFile" accept="audio/*">
+    <button onclick="uploadFile()">Subir</button>
+
+    <script>
+function uploadFile() {
+  var input = document.getElementById('audioFile');
+  var file = input.files[0];
+  var formData = new FormData();
+  formData.append('audioFile', file);
+  
+  var xhr = new XMLHttpRequest();
+  xhr.open('POST', 'upload.php', true);
+  xhr.onload = function () {
+    // El código que se ejecutará después de que se complete la carga
+    console.log(this.response);
+  };
+  xhr.send(formData);
+}
+</script>
+
+
+    </main>
+
+    <footer>
+         <center><li><a href="index.html">---- Volver ----</a></li></center>
+    </footer>
+
+</body>
+</html>

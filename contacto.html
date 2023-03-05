@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario de contacto</title>
+	<meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+	body{
+	background: #2980b9;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #2c3e50, #2980b9);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #2c3e50, #2980b9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	}
+
+
+	p {									
+  	border: #D7C8B6 3px solid;
+  	display: inline;
+  	margin-right: 10px;
+  	line-height: 40px;
+  	height: 40px;
+  	vertical-align: middle;
+
+	}
+
+	label {
+  	color: black;
+  	padding: 0 4px;
+  	text-decoration: none;	
+	}
+
+	
+
+    a {
+    color: black;
+    padding: 0 4px;
+    text-decoration: none;
+    }
+
+    a:hover {
+    background-color: white;
+    color: #D7C8B6;
+    }   
+
+    </style>
+</style>
+
+<body>
+	<form method="post" action="enviar.php">
+	<p><label>Nombre:</label></p>
+	<input type="text" name="nombre" required>
+	<br>
+	<p><label>Correo electrónico:</label></p>
+	<input type="email" name="correo" required>
+	<br>
+	<p><label>Mensaje:</label></p>
+	<textarea name="mensaje" rows="5" cols="30" required></textarea>
+	<br>
+	<input type="submit" value="Enviar">
+    </form>
+	<footer>
+         <center><li><a href="index.html"> ---- Volver ----</a></li></center>
+    </footer>
+
+</body>
+</html>

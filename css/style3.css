@@ -1,0 +1,59 @@
+body {
+	background: #8360c3;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	
+}
+
+ul {
+  list-style-type: none;
+  text-align: center
+}
+
+li {
+  background-color: #black;
+  border: #D7C8B6 2px solid;
+  display: inline;
+  margin-right: 10px;
+}
+
+a {
+  color: black;
+  padding: 0 4px;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: white;
+  color: #D7C8B6;
+}
+
+
+input[type="submit"] {
+    background-color: #F38A2D;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #F38A2D;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
+img {
+  border: 1px solid black;
+}
+
+img {
+  margin: center;
+  display: block;
+}
+
+
